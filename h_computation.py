@@ -34,6 +34,7 @@ H = T + V
 #Solve the generalized eigenvalue problem
 # eval and vec are arrays with eigenvuales and eigenvectors
 # The eigenvualue corresponding to val[i] is the column vec[:,i].
+# eigen value => energy, corresponding eigen vector => c coefficient 
 val, vec = linalg.eig(H,S)
 print("Eigenvalues: ", val.real)
 print("Eigenvectors: ", vec.real)
